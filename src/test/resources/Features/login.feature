@@ -20,9 +20,13 @@ Feature: Login with correct email and password.
   And verify home page is visible
   When Singup button is clicked
   And Verify New User Signup is visible
-  And Enter name and already registered email
+  And Enter name as <name> and already registered email as <email>
   Then Click Signup button
   And Verify error message is visible
+  
+  Example:
+  |name|email|
+  |Shahazoor|shahzoor18@gmail.com|
   
   @TC003
   Scenario: Verify all products and product deatil page

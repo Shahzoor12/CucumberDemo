@@ -146,9 +146,15 @@ public class login {
 		assertEquals(signupTitle.getText(),expectedTitle);
 	}
 
-	@And("Enter name and already registered email")
-	public void enter_name_and_already_registered_email() {
-
+//	@And("Enter name and already registered email")
+//	public void enter_name_and_already_registered_email() {
+//
+//		user.registeredName();
+//		user.registeredEmail();
+//	}
+	
+	@When("Enter name as <name> and already registered email as <email>")
+	public void enter_name_as_name_and_already_registered_email_as_email() {
 		user.registeredName();
 		user.registeredEmail();
 	}
